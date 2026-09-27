@@ -1,0 +1,19 @@
+{
+  "name": "git-diff-tree",
+  "version": "1.1.0",
+  "repository": "https://github.com/alessioalex/git-diff-tree",
+  "gitHead": "9b8f0a0111c2b3ea79189bbbcb543889b4dddafc",
+  "sourceStatus": "gitHead archive HTTP404; published tarball is canonical source",
+  "published": "2019-12-20T12:00:33.300Z",
+  "tarball": "https://registry.npmjs.org/git-diff-tree/-/git-diff-tree-1.1.0.tgz",
+  "integrity": "sha512-PdNkH2snpXsKIzho6OWMZKEl+KZG6Zm+1ghQIDi0tEq1sz/S1tDjvNuYrX2ZpomalHAB89OUQim8O6vN+jesNQ==",
+  "license": "MIT",
+  "reviewedOn": "2026-09-27",
+  "upstreamIssueReview": {
+    "openIssuesFound": 0,
+    "references": [
+      "https://github.com/alessioalex/git-diff-tree/pull/1"
+    ],
+    "notes": "The only upstream issue/PR found is the closed git-spawned-stream update already present in 1.1.0. Stream failures addressed here were reproduced locally, not attributed to an upstream issue."
+  }
+}

@@ -1,3 +1,11 @@
+# @stackline/git-diff-tree
+
+A scoped maintenance fork of `git-diff-tree@1.1.0` by Alexandru Vladutu (MIT). It preserves the event API and diff parsers while replacing deprecated stream plumbing with native Node streams, forwarding patch errors correctly and safely finishing raw-only output. Requires Node.js 18 or newer and Git on PATH. `UPSTREAM.json` records the exact released source and integrity.
+
+Install with `npm install @stackline/git-diff-tree` and use `require("@stackline/git-diff-tree")`. The original API documentation follows. `npm test` runs the two original scenarios on Node’s test runner plus stream, UTF-8 and real Git regressions. `npm run build` and `npm run lint` validate JavaScript syntax; `npm run test:package` validates a fresh packed consumer install.
+
+This package retains `git-spawned-stream@1.0.1`; its existing child-process and size-limit behavior remains unchanged. The public `data` event continues to use two arguments `(type, data)`.
+
 # git-diff-tree
 
 Shelling out to [git-diff-tree(1)](https://www.kernel.org/pub/software/scm/git/docs/git-diff-tree.html) in a Node streamy fashion.
@@ -26,7 +34,7 @@ Where options defaults to:
 Example:
 
 ```js
-var gitDiffTree = require('git-diff-tree');
+var gitDiffTree = require('@stackline/git-diff-tree');
 var path = require('path');
 var repoPath = path.resolve(process.env.REPO || (__dirname + '/../.git'));
 

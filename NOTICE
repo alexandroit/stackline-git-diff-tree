@@ -1,0 +1,3 @@
+git-diff-tree was written by Alexandru Vladutu and is declared MIT in the original package.json and README.md. The published 1.1.0 archive does not contain a separate license file; LICENSE reproduces the standard MIT terms with author attribution.
+
+Stackline changes preserve the original raw and patch parsers, API, fixture and command behavior. Native Node streams replace the pump-chain, split-transform-stream and direct through2 plumbing.

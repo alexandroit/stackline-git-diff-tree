@@ -1,29 +1,21 @@
 {
-  "name": "git-diff-tree",
-  "version": "1.1.0",
+  "name": "@stackline/git-diff-tree",
+  "version": "1.0.0",
   "description": "Shelling out to git-diff-tree(1) in a Node streamy fashion",
   "main": "index.js",
   "dependencies": {
-    "git-spawned-stream": "1.0.1",
-    "pump-chain": "1.0.0",
-    "split-transform-stream": "0.1.1",
-    "through2": "2.0.0"
+    "git-spawned-stream": "1.0.1"
   },
-  "devDependencies": {
-    "alessioalex-standard": "^1.1.0",
-    "husky": "^0.10.2",
-    "mocha": "^2.3.4",
-    "proxyquire": "^1.7.3",
-    "should": "^7.1.1"
-  },
+  "devDependencies": {},
   "scripts": {
-    "test": "mocha",
-    "lint": "alessioalex-standard",
-    "precommit": "npm run lint && npm test"
+    "test": "node --test test/*.test.cjs",
+    "build": "node scripts/check.cjs",
+    "lint": "node scripts/check.cjs",
+    "test:package": "node scripts/test-package.cjs"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alessioalex/git-diff-tree"
+    "url": "git+https://github.com/alexandroit/stackline-git-diff-tree.git"
   },
   "keywords": [
     "git",
@@ -35,7 +27,21 @@
   "author": "Alexandru Vladutu <alexandru.vladutu@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alessioalex/git-diff-tree/issues"
+    "url": "https://github.com/alexandroit/stackline-git-diff-tree/issues"
   },
-  "homepage": "https://github.com/alessioalex/git-diff-tree"
+  "homepage": "https://github.com/alexandroit/stackline-git-diff-tree#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "LICENSE",
+    "NOTICE",
+    "UPSTREAM.json",
+    "CHANGELOG.md"
+  ]
 }
