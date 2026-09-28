@@ -1,7 +1,7 @@
 {
   "name": "@stackline/git-diff-tree",
-  "version": "1.0.0",
-  "description": "Shelling out to git-diff-tree(1) in a Node streamy fashion",
+  "version": "1.0.1",
+  "description": "Stream Git tree differences in Node.js while preserving the git-diff-tree event API",
   "main": "index.js",
   "dependencies": {
     "git-spawned-stream": "1.0.1"
@@ -18,11 +18,14 @@
     "url": "git+https://github.com/alexandroit/stackline-git-diff-tree.git"
   },
   "keywords": [
+    "stackline",
     "git",
     "diff",
     "tree",
     "diff-tree",
-    "git-diff"
+    "git-diff",
+    "stream",
+    "nodejs"
   ],
   "author": "Alexandru Vladutu <alexandru.vladutu@gmail.com>",
   "license": "MIT",
