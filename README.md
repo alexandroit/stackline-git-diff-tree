@@ -3,15 +3,16 @@
 > Stream Git tree differences in Node.js while preserving the git-diff-tree event API.
 
 [![npm version](https://img.shields.io/npm/v/@stackline/git-diff-tree.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/git-diff-tree)
-[![license](https://img.shields.io/npm/l/@stackline/git-diff-tree.svg?style=flat-square)](https://github.com/alexandroit/stackline-git-diff-tree/blob/main/LICENSE)
-[![GitHub repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-git-diff-tree)
+[![license](https://img.shields.io/npm/l/@stackline/git-diff-tree.svg?style=flat-square)](https://github.com/alexandroit/stackline-git-diff-tree)
+[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-git-diff-tree-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-git-diff-tree)
+[![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/git-diff-tree/)
+[![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
 
-**[Documentation](https://github.com/alexandroit/stackline-git-diff-tree#readme)** |
-**[npm](https://www.npmjs.com/package/@stackline/git-diff-tree)** |
-**[Issues](https://github.com/alexandroit/stackline-git-diff-tree/issues)** |
-**[Repository](https://github.com/alexandroit/stackline-git-diff-tree)**
+**[Documentation](https://alexandro.net/docs/vanilla/git-diff-tree/)** | **[npm](https://www.npmjs.com/package/@stackline/git-diff-tree)** | **[Issues](https://github.com/alexandroit/stackline-git-diff-tree/issues)** | **[Repository](https://github.com/alexandroit/stackline-git-diff-tree)**
 
-**Package version:** `1.0.1`
+**Current package version:** `1.0.2`
+
+---
 
 ## Why this package?
 
@@ -27,7 +28,7 @@ Shelling out to [git-diff-tree(1)](https://www.kernel.org/pub/software/scm/git/d
 
 | Item | Value |
 | --- | --- |
-| Package | `@stackline/git-diff-tree@1.0.1` |
+| Package | `@stackline/git-diff-tree@1.0.2` |
 | Supported Node.js | `>=18` |
 | Module entry | `index.js` (CommonJS) |
 | Runtime dependencies | 1 direct dependency |
@@ -136,15 +137,6 @@ npm test
 3. Use the [GitHub publish workflow](https://github.com/alexandroit/stackline-git-diff-tree/actions/workflows/publish.yml) with its `Prod` environment to publish the exact CI tarball.
 4. Verify public npm bytes, package identity, provenance, and the immutable GitHub release evidence.
 
-## Community and Support
-
-Report reproducible package issues in the [issue tracker](https://github.com/alexandroit/stackline-git-diff-tree/issues).
-
-- [Stackline / Alexandro.Net](https://alexandro.net/)
-- [GitHub](https://github.com/alexandroit)
-- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
-- [Reddit community: r/Stackline](https://www.reddit.com/r/Stackline/)
-
 ## License
 
 [MIT](https://github.com/alexandroit/stackline-git-diff-tree/blob/main/LICENSE). Original copyright notices and upstream attribution are retained.
@@ -152,3 +144,21 @@ Report reproducible package issues in the [issue tracker](https://github.com/ale
 MIT
 
 See [NOTICE](https://github.com/alexandroit/stackline-git-diff-tree/blob/main/NOTICE) for retained attribution.
+
+## Credits and original authors
+
+- Alexandru Vladutu.
+- Copyright (c) 2026 Stackline contributors.
+- Stackline maintenance: [Alexandro Paixao Marques](https://www.linkedin.com/in/aleinfo/) and [Stackline contributors](https://github.com/alexandroit).
+
+Original copyright, license notices and contributor acknowledgements remain part of this distribution. Stackline maintenance does not replace authorship of the original work.
+
+## Community and Links
+
+- [Stackline website](https://alexandro.net/)
+- [GitHub projects](https://github.com/alexandroit)
+- [npm packages](https://www.npmjs.com/~alex360qc)
+- [Reddit community — r/Stackline](https://www.reddit.com/r/Stackline/)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+
+Use this repository's issue tracker for reproducible bugs and feature requests. Join r/Stackline for examples, usage questions and release discussions.
