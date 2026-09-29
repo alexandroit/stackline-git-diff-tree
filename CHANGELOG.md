@@ -2,9 +2,11 @@
 
 ## 1.0.1 (2026-09-28)
 
+- Replace `git-spawned-stream` with exact alias `npm:@stackline/git-spawned-stream@1.0.0`, preserving existing import names.
+
 - Standardize package documentation, preserve the API reference and upstream attribution, and add Stackline community links.
 - Add focused npm discovery keywords and consistent repository metadata.
-- Keep runtime behavior and dependency versions unchanged.
+- Keep the runtime API unchanged; maintenance dependency aliases are listed above.
 - Correct the pinned artifact-upload action commit while preserving the publish.yml workflow and Prod environment.
 
 ## 1.0.0

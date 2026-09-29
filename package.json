@@ -4,7 +4,7 @@
   "description": "Stream Git tree differences in Node.js while preserving the git-diff-tree event API",
   "main": "index.js",
   "dependencies": {
-    "git-spawned-stream": "1.0.1"
+    "git-spawned-stream": "npm:@stackline/git-spawned-stream@1.0.0"
   },
   "devDependencies": {},
   "scripts": {

@@ -3,6 +3,10 @@ name: Publish to npm
 on:
   workflow_dispatch:
     inputs:
+      expected_sha512:
+        description: SHA-512 of the reviewed CI tarball
+        required: true
+        type: string
       ci_run_id:
         description: Successful main-branch CI run containing the reviewed npm-package artifact
         required: true
@@ -76,6 +80,8 @@ jobs:
           github-token: ${{ github.token }}
           run-id: ${{ inputs.ci_run_id }}
       - name: Check the CI artifact identity
+        env:
+          EXPECTED_SHA512: ${{ inputs.expected_sha512 }}
         shell: bash
         run: |
           set -euo pipefail
@@ -83,6 +89,8 @@ jobs:
           test "$(find artifact -name '*.tgz' | wc -l)" -eq 1
           tar -xOf "$archive" package/package.json > "$RUNNER_TEMP/packed-package.json"
           node -e "require('node:assert/strict').deepEqual(require(process.argv[1]), require('./package.json'))" "$RUNNER_TEMP/packed-package.json"
+          [[ "$EXPECTED_SHA512" =~ ^[0-9a-f]{128}$ ]]
+          test "$(sha512sum "$archive" | cut -d ' ' -f1)" = "$EXPECTED_SHA512"
           sha256sum "$archive"
           npm --version
       - name: Check whether this exact artifact is already published
@@ -113,15 +121,11 @@ jobs:
           else
             test "$PACKAGE_EXISTS" = "true"
           fi
-      - name: Require the temporary first-publication token
-        if: steps.registry.outputs.published == 'false' && steps.registry.outputs.package_exists == 'false' && inputs.bootstrap == true
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_BOOTSTRAP_TOKEN }}
-        shell: bash
-        run: test -n "$NODE_AUTH_TOKEN"
-      - name: Publish the exact CI tarball with OIDC and provenance
+      - name: Publish the exact CI tarball with provenance
         if: steps.registry.outputs.published == 'false' && steps.registry.outputs.package_exists == 'true' && inputs.bootstrap == false
         run: npm publish ./artifact/*.tgz --access public --provenance --ignore-scripts
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.STACKLINE_NPM_PUBLISH_TOKEN }}
       - name: Bootstrap the first version from the exact CI tarball
         if: steps.registry.outputs.published == 'false' && steps.registry.outputs.package_exists == 'false' && inputs.bootstrap == true
         env:

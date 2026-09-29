@@ -19,7 +19,7 @@ A scoped maintenance fork of `git-diff-tree@1.1.0` by Alexandru Vladutu (MIT). I
 
 Install with `npm install @stackline/git-diff-tree` and use `require("@stackline/git-diff-tree")`. The original API documentation follows. `npm test` runs the two original scenarios on Node’s test runner plus stream, UTF-8 and real Git regressions. `npm run build` and `npm run lint` validate JavaScript syntax; `npm run test:package` validates a fresh packed consumer install.
 
-This package retains `git-spawned-stream@1.0.1`; its existing child-process and size-limit behavior remains unchanged. The public `data` event continues to use two arguments `(type, data)`.
+This package installs the verified `@stackline/git-spawned-stream@1.0.0` maintenance fork through the `git-spawned-stream` alias; its existing child-process and size-limit behavior remains unchanged. The public `data` event continues to use two arguments `(type, data)`.
 
 Shelling out to [git-diff-tree(1)](https://www.kernel.org/pub/software/scm/git/docs/git-diff-tree.html) in a Node streamy fashion.
 
