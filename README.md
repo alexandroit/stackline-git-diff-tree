@@ -4,13 +4,13 @@
 
 [![npm version](https://img.shields.io/npm/v/@stackline/git-diff-tree.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/git-diff-tree)
 [![license](https://img.shields.io/npm/l/@stackline/git-diff-tree.svg?style=flat-square)](https://github.com/alexandroit/stackline-git-diff-tree)
-[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-git-diff-tree-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-git-diff-tree)
+[![GitHub repository](https://img.shields.io/badge/GitHub-repository-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-git-diff-tree)
 [![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/git-diff-tree/)
 [![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
 
 **[Documentation](https://alexandro.net/docs/vanilla/git-diff-tree/)** | **[npm](https://www.npmjs.com/package/@stackline/git-diff-tree)** | **[Issues](https://github.com/alexandroit/stackline-git-diff-tree/issues)** | **[Repository](https://github.com/alexandroit/stackline-git-diff-tree)**
 
-**Current package version:** `1.0.2`
+**Current package version:** `1.0.3`
 
 ---
 
@@ -28,7 +28,7 @@ Shelling out to [git-diff-tree(1)](https://www.kernel.org/pub/software/scm/git/d
 
 | Item | Value |
 | --- | --- |
-| Package | `@stackline/git-diff-tree@1.0.2` |
+| Package | `@stackline/git-diff-tree@1.0.3` |
 | Supported Node.js | `>=18` |
 | Module entry | `index.js` (CommonJS) |
 | Runtime dependencies | 1 direct dependency |
