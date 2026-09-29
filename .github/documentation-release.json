@@ -1,0 +1,29 @@
+{
+  "repository": "alexandroit/stackline-git-diff-tree",
+  "packages": [
+    {
+      "name": "@stackline/git-diff-tree",
+      "path": "README.md",
+      "version": "1.0.2",
+      "baselineVersion": "1.0.1",
+      "keywords": [
+        "stackline",
+        "npm-package",
+        "git-diff-tree",
+        "nodejs",
+        "streams",
+        "git",
+        "diff",
+        "tree",
+        "diff-tree",
+        "git-diff",
+        "stream"
+      ],
+      "homepage": "https://alexandro.net/docs/vanilla/git-diff-tree/",
+      "baselineTarball": "https://registry.npmjs.org/@stackline/git-diff-tree/-/git-diff-tree-1.0.1.tgz",
+      "baselineIntegrity": "sha512-LwiJTmgjS1ydsC/jFdjWlPMIEJ+6q6PnDnmAT/XbkFWY3X/wj1gPAo4wmntbJ/vlJt/rRFXfm7VYZd+ZmZdzqA==",
+      "expectedSha512": "f8d019f36c0006b5378f493482e16b2a165a13081590fa08d0b9849b78bd6bc2bfb71da6d487562c4d2828d83a9d70b3967931e1dbd1eaa9bad151326781110d",
+      "tag": "docs-stackline-git-diff-tree-v1.0.2"
+    }
+  ]
+}
