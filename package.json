@@ -1,6 +1,6 @@
 {
   "name": "@stackline/git-diff-tree",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Stream Git tree differences in Node.js while preserving the git-diff-tree event API",
   "main": "index.js",
   "dependencies": {

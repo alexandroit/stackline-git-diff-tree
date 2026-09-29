@@ -4,7 +4,7 @@
     {
       "name": "@stackline/git-diff-tree",
       "path": "README.md",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "baselineVersion": "1.0.1",
       "keywords": [
         "stackline",
@@ -22,8 +22,8 @@
       "homepage": "https://alexandro.net/docs/vanilla/git-diff-tree/",
       "baselineTarball": "https://registry.npmjs.org/@stackline/git-diff-tree/-/git-diff-tree-1.0.1.tgz",
       "baselineIntegrity": "sha512-LwiJTmgjS1ydsC/jFdjWlPMIEJ+6q6PnDnmAT/XbkFWY3X/wj1gPAo4wmntbJ/vlJt/rRFXfm7VYZd+ZmZdzqA==",
-      "expectedSha512": "f8d019f36c0006b5378f493482e16b2a165a13081590fa08d0b9849b78bd6bc2bfb71da6d487562c4d2828d83a9d70b3967931e1dbd1eaa9bad151326781110d",
-      "tag": "docs-stackline-git-diff-tree-v1.0.2"
+      "expectedSha512": "2da960405fef824e96ce408cde8d86967cdbe5e83de22f97d9454ea9505936f5315600b82a5cc0c649dc8bf6c38eb28978fe2466fb7fbc87a0a2239e7d66c4ae",
+      "tag": "docs-stackline-git-diff-tree-v1.0.3"
     }
   ]
 }
